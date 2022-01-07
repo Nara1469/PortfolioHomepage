@@ -47,7 +47,7 @@ nav a:hover {
     font-size: 120%;
 }
 
-/* Top Picture */
+/* Top Picture Positioning*/
 figure {
     position: relative;
 }
@@ -69,9 +69,8 @@ article {
 } 
 
 aside {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
 }
 
 ul {
@@ -91,7 +90,7 @@ ul a {
 
 ul a:hover {
     text-decoration: underline;
-    color: var(--turqoise);
+    color: blue;
     font-size: 120%;
 }
 
@@ -137,19 +136,16 @@ footer {
     opacity: 100%;
 }
 
-#img-id {
-    width: 1040px;
-    height: 180px;
-    max-width: 100%;
-}
-
 .img-class { 
-    width: 510px;
-    height: 180px;
-    max-width: 100%;
+    max-inline-size: 100%;
 }
 
-@media screen and (max-width: 768px) {
+.card:nth-child(1) {
+    grid-column: 1 / 3;
+    grid-row: 1;
+}
+
+@media screen and (max-width: 896px) {
     header {
         justify-content: center;
     }
@@ -166,14 +162,15 @@ footer {
     
     .content {
         width: 100%;
-        background-color: turquoise;
+        background-color: var(--turqoise);
     }
-}
 
-@media screen and (max-width: 1366px) {
-    #img-id {
-        width: 510px;
-        height: 180px;
-        max-width: 100%;
+    aside {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .card:nth-child(1) {
+        grid-column: 1;
+        grid-row: 1;
     }
 }
