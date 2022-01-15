@@ -50,5 +50,5 @@ THEN I am presented with a responsive layout that adapts to my viewport
 
 The following animation shows the web application's appearance and functionality:
 
-![portfolio demo](./Assets/Images/HW2.jpg)
+![Portfolio mock-up](./Assets/Images/HW2.jpg)
 
