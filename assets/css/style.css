@@ -61,6 +61,10 @@ figcaption{
     padding: 10px;
 }
 
+p {
+    position: relative;
+}
+
 article {
     display: flex;
     flex-wrap: wrap;
@@ -102,6 +106,13 @@ footer {
     text-align: right;
 }
 
+.profile-picture {
+    float: left;
+    width: 140px;
+    height: 160px;
+    margin: 0px 10px;
+}
+
 .top-picture {
     width: 100vw;
     height: 180px;
@@ -140,7 +151,6 @@ footer {
 .img-class { 
     width: 100%;
     height: 180px;
-    /* max-inline-size: 100%; */
 }
 
 .card:nth-child(1) {
